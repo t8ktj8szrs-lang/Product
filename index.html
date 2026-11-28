@@ -1,0 +1,2700 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <meta content="#14532d" name="theme-color"/>
+  <title>
+   Budgtree &mdash; Smart Student Budgeting
+  </title>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+  <link href="./assets/budgtree-mark.png" rel="icon" type="image/svg+xml"/>
+  <link href="./style.css" rel="stylesheet"/>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2">
+  </script>
+ </head>
+ <body>
+  <div class="landing-view" id="landingView">
+   <header class="landing-nav">
+    <a class="landing-brand" href="#top">
+     <span aria-hidden="true" class="brand-inline-mark">
+      <img alt="" src="./assets/budgtree-mark.png"/>
+     </span>
+     <span>
+      <b>
+       Budgtree
+      </b>
+      <small>
+       SMART STUDENT BUDGETING
+      </small>
+     </span>
+    </a>
+    <nav>
+     <a href="#landing-features">
+      Features
+     </a>
+     <a href="#landing-how">
+      How it works
+     </a>
+     <a href="#landing-about">
+      About
+     </a>
+    </nav>
+    <div class="landing-actions">
+     <button class="outline-btn" data-open-auth="login">
+      Log in
+     </button>
+     <button class="primary-btn" data-open-auth="register">
+      Get started
+     </button>
+    </div>
+    <button class="landing-mobile-login" data-open-auth="login">
+     Log in
+    </button>
+   </header>
+   <main id="top">
+    <section class="landing-hero">
+     <div class="landing-copy">
+      <div class="eyebrow">
+       PLAN &middot; SAVE &middot; GROW
+      </div>
+      <h1>
+       Make every peso
+       <em>
+        count.
+       </em>
+      </h1>
+      <p>
+       A smarter way for senior high school students to understand their allowance, plan their spending, and build better saving habits.
+      </p>
+      <div class="landing-cta">
+       <button class="primary-btn" data-open-auth="register">
+        Create your free account
+        <span>
+         &rarr;
+        </span>
+       </button>
+       <button class="text-btn" data-open-auth="login">
+        I already have an account
+       </button>
+      </div>
+      <div class="landing-proof">
+       <span>
+        &checkmark; Personal budget tracking
+       </span>
+       <span>
+        &checkmark; Student-friendly tools
+       </span>
+       <span>
+        &checkmark; No real-money transactions
+       </span>
+      </div>
+     </div>
+     <div class="landing-visual">
+      <div class="visual-glow">
+      </div>
+      <div class="visual-card visual-balance">
+       <small>
+        YOUR AVAILABLE BALANCE
+       </small>
+       <strong>
+        ₱ 4,850.00
+       </strong>
+       <span>
+        Example dashboard preview
+       </span>
+      </div>
+      <div class="visual-card visual-goal">
+       <span class="visual-icon">
+        ◎
+       </span>
+       <div>
+        <b>
+         Saving for something?
+        </b>
+        <small>
+         Track your progress, one deposit at a time.
+        </small>
+        <div class="visual-progress">
+         <i>
+         </i>
+        </div>
+       </div>
+      </div>
+      <div class="visual-orbit orbit-one">
+      </div>
+      <div class="visual-orbit orbit-two">
+      </div>
+      <div class="visual-leaf">
+       ✦
+      </div>
+     </div>
+    </section>
+    <section class="landing-features" id="landing-features">
+     <div class="section-intro">
+      <div class="eyebrow">
+       YOUR MONEY, MORE ORGANIZED
+      </div>
+      <h2>
+       Everything students need to build better habits.
+      </h2>
+      <p>
+       Practical tools to help you see where your money goes and plan what comes next.
+      </p>
+     </div>
+     <div class="landing-feature-grid">
+      <article>
+       <span>
+        &nearrow;
+       </span>
+       <h3>
+        Track spending
+       </h3>
+       <p>
+        Record allowance and expenses in one organized place.
+       </p>
+      </article>
+      <article>
+       <span>
+        ▤
+       </span>
+       <h3>
+        Plan a budget
+       </h3>
+       <p>
+        Set category limits and keep an eye on your spending.
+       </p>
+      </article>
+      <article>
+       <span>
+        ◎
+       </span>
+       <h3>
+        Grow savings
+       </h3>
+       <p>
+        Create goals and see your progress over time.
+       </p>
+      </article>
+      <article>
+       <span>
+        ▦
+       </span>
+       <h3>
+        Plan your month
+       </h3>
+       <p>
+        Use the financial calendar to keep track of money-related plans.
+       </p>
+      </article>
+     </div>
+    </section>
+    <section class="landing-how" id="landing-how">
+     <div>
+      <div class="eyebrow">
+       SIMPLE BY DESIGN
+      </div>
+      <h2>
+       A clearer picture of your student finances.
+      </h2>
+      <p>
+       Start with your own account, record your activity, and use your dashboard to understand your financial habits.
+      </p>
+     </div>
+     <div class="how-steps">
+      <div>
+       <b>
+        01
+       </b>
+       <span>
+        <strong>
+         Create an account
+        </strong>
+        <small>
+         Set up your personal student workspace.
+        </small>
+       </span>
+      </div>
+      <div>
+       <b>
+        02
+       </b>
+       <span>
+        <strong>
+         Record your money activity
+        </strong>
+        <small>
+         Add allowance, expenses, and savings records.
+        </small>
+       </span>
+      </div>
+      <div>
+       <b>
+        03
+       </b>
+       <span>
+        <strong>
+         Learn and improve
+        </strong>
+        <small>
+         Use reports and financial learning resources to build good habits.
+        </small>
+       </span>
+      </div>
+     </div>
+    </section>
+    <section class="landing-about" id="landing-about">
+     <div class="about-mark about-full-logo">
+      <img alt="Budgtree logo" src="./assets/budgtree-logo.png"/>
+     </div>
+     <div>
+      <div class="eyebrow">
+       ABOUT BUDGTREE
+      </div>
+      <h2>
+       Student budgeting, made more approachable.
+      </h2>
+      <p>
+       Budgtree is a student-focused financial management and financial literacy platform. It helps students organize personal records and learn about budgeting. It does not process payments, connect to e-wallets, or move real money.
+      </p>
+     </div>
+    </section>
+   </main>
+   <footer class="landing-footer">
+    <b>
+     Budgtree
+    </b>
+    <span>
+     Plan thoughtfully. Save consistently. Grow confidently.
+    </span>
+    <small>
+     &copy;
+     <span id="landingYear">
+     </span>
+     Budgtree
+    </small>
+   </footer>
+  </div>
+  <div class="auth-view hidden" id="authView">
+   <div class="auth-brand">
+    <span aria-hidden="true" class="brand-inline-mark">
+     <img alt="" src="./assets/budgtree-mark.png"/>
+    </span>
+    <span>
+     <b>
+      Budgtree
+     </b>
+     <small>
+      SMART STUDENT BUDGETING
+     </small>
+    </span>
+   </div>
+   <div class="auth-layout">
+    <section class="auth-intro">
+     <div class="eyebrow">
+      PLAN &bull; SAVE &bull; GROW
+     </div>
+     <h1>
+      Build better money habits, one decision at a time.
+     </h1>
+     <p>
+      Your allowance, spending, savings, and financial goals in one thoughtful workspace.
+     </p>
+     <div class="auth-stats">
+      <div>
+       <b>
+        Track
+       </b>
+       <small>
+        Every transaction
+       </small>
+      </div>
+      <div>
+       <b>
+        Plan
+       </b>
+       <small>
+        Your monthly budget
+       </small>
+      </div>
+      <div>
+       <b>
+        Grow
+       </b>
+       <small>
+        Your savings goals
+       </small>
+      </div>
+     </div>
+     <div class="auth-decoration">
+      <span>
+       ₱
+      </span>
+      <span>
+       ✦
+      </span>
+      <span>
+       &nearrow;
+      </span>
+     </div>
+    </section>
+    <section class="auth-card">
+     <div class="auth-tabs">
+      <button class="auth-tab active" data-auth-tab="login">
+       Log in
+      </button>
+      <button class="auth-tab" data-auth-tab="register">
+       Create account
+      </button>
+     </div>
+     <form class="auth-form hidden" id="loginForm">
+      <div>
+       <div class="eyebrow">
+        WELCOME BACK
+       </div>
+       <h2>
+        Sign in to Budgtree
+       </h2>
+       <p>
+        Access your personal financial dashboard.
+       </p>
+      </div>
+      <label class="field">
+       Username, email, or student number
+       <input autocomplete="username" id="loginEmail" placeholder="Username, email, or student number" required="" type="text"/>
+      </label>
+      <label class="field">
+       Password
+       <div class="password-wrap">
+        <input autocomplete="current-password" id="loginPassword" placeholder="Enter your password" required="" type="password"/>
+        <button class="show-password" data-toggle-password="loginPassword" type="button">
+         Show
+        </button>
+       </div>
+      </label>
+      <div class="auth-options">
+       <label class="remember">
+        <input checked="" id="rememberMe" type="checkbox"/>
+        Remember me
+       </label>
+       <button class="link-btn" id="forgotPassword" type="button">
+        Forgot password?
+       </button>
+      </div>
+      <div class="form-error" id="loginError" role="alert">
+      </div>
+      <button class="primary-btn full">
+       Log in
+       <span>
+        &rarr;
+       </span>
+      </button>
+      <div class="separator">
+       <span>
+        or
+       </span>
+      </div>
+      <button class="google-btn" id="googleLogin" type="button">
+       <b class="google-g">
+        G
+       </b>
+       Continue with Google
+      </button>
+      <div class="auth-note" id="authModeNote">
+       Demo mode: account data stays in this browser. Configure Supabase for real accounts.
+      </div>
+     </form>
+     <form class="auth-form" id="registerForm">
+      <div>
+       <div class="eyebrow">
+        GET STARTED
+       </div>
+       <h2>
+        Create your account
+       </h2>
+       <p>
+        Set up your student finance workspace.
+       </p>
+      </div>
+      <label class="field">
+       Full name
+       <input autocomplete="name" id="regName" maxlength="60" placeholder="Your full name" required=""/>
+      </label>
+      <label class="field">
+       Username
+       <input autocomplete="username" id="regUsername" maxlength="24" minlength="3" pattern="[A-Za-z0-9._-]{3,24}" placeholder="Choose a username (3&ndash;24 characters)" required=""/>
+       <small class="field-hint">
+        Use letters, numbers, periods, underscores, or hyphens. You can use this to log in.
+       </small>
+      </label>
+      <label class="field">
+       Student number
+       <input autocomplete="off" id="regStudentId" maxlength="30" placeholder="Your student number" required=""/>
+      </label>
+      <label class="field">
+       Email address
+       <input autocomplete="email" id="regEmail" placeholder="you@example.com" required="" type="email"/>
+      </label>
+      <label class="field">
+       Password
+       <div class="password-wrap">
+        <input autocomplete="new-password" id="regPassword" minlength="8" placeholder="At least 8 characters" required="" type="password"/>
+        <button class="show-password" data-toggle-password="regPassword" type="button">
+         Show
+        </button>
+       </div>
+      </label>
+      <div class="strength">
+       <div class="strength-bar">
+        <i id="strengthFill">
+        </i>
+       </div>
+       <small id="strengthText">
+        Password strength
+       </small>
+      </div>
+      <div class="password-rules" id="passwordRules">
+       <span data-rule="length">
+        &cir; At least 8 characters
+       </span>
+       <span data-rule="letter">
+        &cir; At least one letter
+       </span>
+       <span data-rule="number">
+        &cir; At least one number
+       </span>
+       <span data-rule="match">
+        &cir; Passwords match
+       </span>
+      </div>
+      <label class="field">
+       Confirm password
+       <input autocomplete="new-password" id="regConfirm" placeholder="Repeat password" required="" type="password"/>
+      </label>
+      <label class="remember terms">
+       <input id="agreeTerms" required="" type="checkbox"/>
+       I agree to the terms and conditions and will use this account for my own financial records.
+      </label>
+      <div class="form-error" id="registerError" role="alert">
+      </div>
+      <button class="primary-btn full">
+       Create account
+       <span>
+        &rarr;
+       </span>
+      </button>
+      <div class="separator">
+       <span>
+        or
+       </span>
+      </div>
+      <button class="google-btn" id="googleRegister" type="button">
+       <b class="google-g">
+        G
+       </b>
+       Sign up with Google
+      </button>
+      <div class="auth-note">
+       Use a unique password. Google sign-in requires OAuth setup in Supabase.
+      </div>
+     </form>
+    </section>
+   </div>
+   <footer class="auth-footer">
+    Budgtree &bull; Plan thoughtfully. Save consistently. Grow confidently.
+   </footer>
+  </div>
+  <div class="app-shell hidden" id="appView">
+   <aside class="sidebar" id="sidebar">
+    <a class="brand" data-page="dashboard" href="#">
+     <span aria-hidden="true" class="brand-inline-mark">
+      <img alt="" src="./assets/budgtree-mark.png"/>
+     </span>
+     <span>
+      <b>
+       Budgtree
+      </b>
+      <small>
+       STUDENT BUDGET TRACKER
+      </small>
+     </span>
+    </a>
+    <div class="side-scroll">
+     <div class="side-label">
+      WORKSPACE
+     </div>
+     <nav>
+      <button class="nav-link active" data-page="dashboard">
+       <span>
+        ▦
+       </span>
+       Dashboard
+      </button>
+      <button class="nav-link" data-page="transactions">
+       <span>
+        &rlarr;
+       </span>
+       Transactions
+      </button>
+      <button class="nav-link" data-page="budget">
+       <span>
+        ▤
+       </span>
+       Budget planner
+      </button>
+      <button class="nav-link" data-page="savings">
+       <span>
+        ◎
+       </span>
+       Savings goals
+      </button>
+      <button class="nav-link" data-page="allowance">
+       <span>
+        ₱
+       </span>
+       Allowance tracker
+      </button>
+      <button class="nav-link" data-page="calendar">
+       <span>
+        ▦
+       </span>
+       Financial calendar
+      </button>
+      <button class="nav-link" data-page="reports">
+       <span>
+        ▥
+       </span>
+       Reports &amp; insights
+      </button>
+      <button class="nav-link" data-page="learn">
+       <span>
+        ▶
+       </span>
+       Learn
+       <i class="new-nav-tag">
+        NEW
+       </i>
+      </button>
+     </nav>
+     <div class="side-label side-label-spaced">
+      GROW &amp; EARN
+     </div>
+     <nav>
+      <button class="nav-link" data-page="garden">
+       <span>
+        ✿
+       </span>
+       Eco-Garden
+      </button>
+      <button class="nav-link" data-page="rewards">
+       <span>
+        🏆
+       </span>
+       Rewards &amp; Achievements
+      </button>
+     </nav>
+     <div class="side-label side-label-spaced">
+      ACCOUNT
+     </div>
+     <nav>
+      <button class="nav-link" data-page="profile">
+       <span>
+        ♙
+       </span>
+       Profile
+      </button>
+      <button class="nav-link" data-page="settings">
+       <span>
+        ⚙
+       </span>
+       Settings
+      </button>
+     </nav>
+    </div>
+    <div class="sidebar-bottom">
+     <button class="logout-btn" id="logoutBtn">
+      &rarrhk; Log out
+     </button>
+    </div>
+   </aside>
+   <main class="main">
+    <header class="topbar">
+     <div class="crumb">
+      <i>
+      </i>
+      Personal finance
+      <span>
+       /
+      </span>
+      <b id="crumbName">
+       Dashboard
+      </b>
+     </div>
+     <div class="top-actions">
+      <label class="search">
+       &telrec;
+       <input id="globalSearch" placeholder="Search transactions..."/>
+      </label>
+      <button class="icon-btn" id="notificationBtn" title="Notifications">
+       ♧
+       <i>
+       </i>
+      </button>
+      <button class="profile-button" data-page="profile">
+       <span class="avatar" id="avatarInitial">
+        S
+       </span>
+       <span>
+        <b id="topName">
+         Student
+        </b>
+        <small>
+         Student account
+        </small>
+       </span>
+       <span>
+        ⌄
+       </span>
+      </button>
+      <button class="mobile-menu" id="mobileMenu">
+       ☰
+      </button>
+     </div>
+    </header>
+    <div class="content">
+     <section class="page active" id="page-dashboard">
+      <div class="welcome-row">
+       <div>
+        <div class="eyebrow">
+         YOUR FINANCES AT A GLANCE
+        </div>
+        <h1>
+         Good day,
+         <span id="welcomeName">
+          Student
+         </span>
+         .
+        </h1>
+        <p>
+         Make informed decisions today for a stronger financial future.
+        </p>
+       </div>
+       <button class="primary-btn" id="quickAdd">
+        ＋ Add transaction
+       </button>
+      </div>
+      <div class="metric-grid">
+       <article class="metric-card balance-card">
+        <div class="metric-head">
+         Total balance
+         <span>
+          ₱
+         </span>
+        </div>
+        <strong id="balanceValue">
+         ₱0.00
+        </strong>
+        <small>
+         Income less expenses and goal allocations
+        </small>
+       </article>
+       <article class="metric-card">
+        <div class="metric-head">
+         Total income
+         <span class="round green">
+          &swarrow;
+         </span>
+        </div>
+        <strong id="incomeValue">
+         ₱0.00
+        </strong>
+        <small>
+         Money received
+        </small>
+       </article>
+       <article class="metric-card">
+        <div class="metric-head">
+         Total expenses
+         <span class="round red">
+          &nearrow;
+         </span>
+        </div>
+        <strong id="expenseValue">
+         ₱0.00
+        </strong>
+        <small>
+         Money spent
+        </small>
+       </article>
+       <article class="metric-card">
+        <div class="metric-head">
+         Total savings
+         <span class="round gold">
+          ◎
+         </span>
+        </div>
+        <strong id="savingsValue">
+         ₱0.00
+        </strong>
+        <small>
+         Across your goals
+        </small>
+       </article>
+      </div>
+      <div class="dashboard-grid">
+       <article class="panel">
+        <div class="panel-head">
+         <div>
+          <h2>
+           Spending analysis
+          </h2>
+          <p>
+           Understand where your money goes.
+          </p>
+         </div>
+         <select id="chartPeriod">
+          <option value="all">
+           All time
+          </option>
+          <option value="month">
+           This month
+          </option>
+         </select>
+        </div>
+        <div class="chart-wrap">
+         <canvas id="spendingChart">
+         </canvas>
+        </div>
+        <div class="legend" id="legend">
+        </div>
+       </article>
+       <article class="panel">
+        <div class="panel-head">
+         <div>
+          <h2>
+           Recent transactions
+          </h2>
+          <p>
+           Your latest financial activity.
+          </p>
+         </div>
+         <button class="text-btn" data-page="transactions">
+          View all &rarr;
+         </button>
+        </div>
+        <div id="recentList">
+        </div>
+       </article>
+       <article class="panel">
+        <div class="panel-head">
+         <div>
+          <h2>
+           Budget overview
+          </h2>
+          <p>
+           Monthly spending limits.
+          </p>
+         </div>
+         <button class="text-btn" data-page="budget">
+          Manage &rarr;
+         </button>
+        </div>
+        <div id="budgetOverview">
+        </div>
+       </article>
+       <article class="panel">
+        <div class="panel-head">
+         <div>
+          <h2>
+           Savings goals
+          </h2>
+          <p>
+           Small deposits, meaningful progress.
+          </p>
+         </div>
+         <button class="text-btn" data-page="savings">
+          View goals &rarr;
+         </button>
+        </div>
+        <div id="goalOverview">
+        </div>
+       </article>
+       <article class="panel reminder-panel">
+        <div class="panel-head">
+         <div>
+          <h2>
+           Payment reminders
+          </h2>
+          <p>
+           Keep track of bills, debts, and upcoming payments.
+          </p>
+         </div>
+         <span class="reminder-count" id="reminderCount">
+          0 pending
+         </span>
+        </div>
+        <div class="reminder-list" id="reminderList">
+        </div>
+        <div class="reminder-form">
+         <input id="reminderTitle" maxlength="70" placeholder="Payment or debt name"/>
+         <input id="reminderAmount" inputmode="decimal" min="0" placeholder="Amount (₱)" step=".01" type="text"/>
+         <input id="reminderDate" type="date"/>
+         <button class="primary-btn" id="addReminder">
+          ＋ Add
+         </button>
+        </div>
+       </article>
+       <article class="panel quote-panel">
+        <div class="eyebrow">
+         A LITTLE REMINDER
+        </div>
+        <blockquote id="motivationQuote">
+         &ldquo;Do not save what is left after spending, but spend what is left after saving.&rdquo;
+        </blockquote>
+        <small id="motivationAuthor">
+         Build your future, one decision at a time.
+        </small>
+        <div class="quote-refresh">
+         <span>
+          Fresh motivation every 10 minutes
+         </span>
+         <span id="quoteCountdown">
+          10:00
+         </span>
+        </div>
+       </article>
+      </div>
+     </section>
+     <section class="page" id="page-transactions">
+      <div class="page-heading">
+       <div>
+        <div class="eyebrow">
+         FINANCIAL ACTIVITY
+        </div>
+        <h1>
+         Transactions
+        </h1>
+        <p>
+         Record and review your income and expenses.
+        </p>
+       </div>
+       <button class="primary-btn" id="addTransaction">
+        ＋ Add transaction
+       </button>
+      </div>
+      <article class="panel table-panel">
+       <div class="table-toolbar">
+        <h2>
+         Transaction history
+        </h2>
+        <div class="filters">
+         <input id="transactionSearch" placeholder="Search description..."/>
+         <select id="typeFilter">
+          <option value="all">
+           All types
+          </option>
+          <option value="income">
+           Income
+          </option>
+          <option value="expense">
+           Expenses
+          </option>
+          <option value="savings">
+           Savings
+          </option>
+         </select>
+         <select id="categoryFilter">
+          <option value="all">
+           All categories
+          </option>
+         </select>
+        </div>
+       </div>
+       <div class="table-scroll">
+        <table>
+         <thead>
+          <tr>
+           <th>
+            DESCRIPTION
+           </th>
+           <th>
+            CATEGORY
+           </th>
+           <th>
+            DATE
+           </th>
+           <th>
+            TYPE
+           </th>
+           <th class="right">
+            AMOUNT
+           </th>
+           <th>
+           </th>
+          </tr>
+         </thead>
+         <tbody id="transactionRows">
+         </tbody>
+        </table>
+       </div>
+       <div class="empty-state hidden" id="transactionEmpty">
+        No transactions yet. Add your first transaction.
+       </div>
+      </article>
+     </section>
+     <section class="page" id="page-budget">
+      <div class="page-heading">
+       <div>
+        <div class="eyebrow">
+         PLAN WITH PURPOSE
+        </div>
+        <h1>
+         Budget planner
+        </h1>
+        <p>
+         Set spending limits and stay within your monthly plan.
+        </p>
+       </div>
+       <button class="primary-btn" id="editBudget">
+        ＋ Set budget
+       </button>
+      </div>
+      <div class="metric-grid compact">
+       <article class="metric-card">
+        <div class="metric-head">
+         Monthly budget
+        </div>
+        <strong id="budgetTotal">
+         ₱0.00
+        </strong>
+       </article>
+       <article class="metric-card">
+        <div class="metric-head">
+         Spent this month
+        </div>
+        <strong id="budgetSpent">
+         ₱0.00
+        </strong>
+       </article>
+       <article class="metric-card">
+        <div class="metric-head">
+         Remaining budget
+        </div>
+        <strong id="budgetRemaining">
+         ₱0.00
+        </strong>
+       </article>
+      </div>
+      <article class="panel">
+       <div class="panel-head">
+        <div>
+         <h2>
+          Category allocations
+         </h2>
+         <p>
+          Track actual spending against each limit.
+         </p>
+        </div>
+       </div>
+       <div class="budget-rows" id="budgetRows">
+       </div>
+      </article>
+      <article class="panel other-purchases-panel">
+       <div class="panel-head">
+        <div>
+         <h2>
+          Other purchases
+         </h2>
+         <p>
+          Keep small purchases visible, one item at a time.
+         </p>
+        </div>
+        <button class="primary-btn" id="addOtherPurchase">
+         ＋ Add purchase
+        </button>
+       </div>
+       <div id="otherPurchaseRows">
+       </div>
+       <div class="other-total">
+        <span>
+         Total other purchases this month
+        </span>
+        <b id="otherPurchaseTotal">
+         ₱0.00
+        </b>
+       </div>
+      </article>
+     </section>
+     <section class="page" id="page-savings">
+      <div class="page-heading">
+       <div>
+        <div class="eyebrow">
+         SAVE FOR WHAT MATTERS
+        </div>
+        <h1>
+         Savings goals
+        </h1>
+        <p>
+         Give your plans a target and watch your progress grow.
+        </p>
+       </div>
+       <button class="primary-btn" id="addGoal">
+        ＋ Create goal
+       </button>
+      </div>
+      <div class="metric-grid compact">
+       <article class="metric-card">
+        <div class="metric-head">
+         Total saved
+        </div>
+        <strong id="savedTotal">
+         ₱0.00
+        </strong>
+       </article>
+       <article class="metric-card">
+        <div class="metric-head">
+         Active goals
+        </div>
+        <strong id="activeGoals">
+         0
+        </strong>
+       </article>
+       <article class="metric-card">
+        <div class="metric-head">
+         Target amount
+        </div>
+        <strong id="targetTotal">
+         ₱0.00
+        </strong>
+       </article>
+      </div>
+      <div class="goal-grid" id="goalCards">
+      </div>
+     </section>
+     <section class="page" id="page-allowance">
+      <div class="page-heading">
+       <div>
+        <div class="eyebrow">
+         STUDENT MONEY FLOW
+        </div>
+        <h1>
+         Allowance tracker
+        </h1>
+        <p>
+         Know how much you can safely spend before your next allowance.
+        </p>
+       </div>
+      </div>
+      <div class="metric-grid compact">
+       <article class="metric-card">
+        <div class="metric-head">
+         Allowance amount
+        </div>
+        <strong id="allowanceAmount">
+         ₱0.00
+        </strong>
+       </article>
+       <article class="metric-card">
+        <div class="metric-head">
+         Spent this period
+        </div>
+        <strong id="allowanceSpent">
+         ₱0.00
+        </strong>
+       </article>
+       <article class="metric-card">
+        <div class="metric-head">
+         Daily safe-to-spend
+        </div>
+        <strong id="allowanceDaily">
+         ₱0.00
+        </strong>
+       </article>
+      </div>
+      <div class="settings-grid">
+       <article class="panel settings-panel">
+        <h2>
+         Allowance schedule
+        </h2>
+        <p>
+         Set how and when you receive your allowance.
+        </p>
+        <label class="field">
+         Amount (₱)
+         <input id="allowanceInput" min="0" placeholder="e.g. 3000" step=".01" type="number"/>
+        </label>
+        <label class="field">
+         Frequency
+         <select id="allowanceFrequency">
+          <option value="weekly">
+           Weekly
+          </option>
+          <option value="biweekly">
+           Every two weeks
+          </option>
+          <option value="monthly">
+           Monthly
+          </option>
+          <option value="daily">
+           Daily
+          </option>
+         </select>
+        </label>
+        <label class="field">
+         Next allowance date
+         <input id="allowanceNext" type="date"/>
+        </label>
+        <button class="primary-btn" id="saveAllowance">
+         Save allowance plan
+        </button>
+       </article>
+       <article class="panel settings-panel">
+        <h2>
+         Spending pace
+        </h2>
+        <p id="allowanceAdvice">
+         Set your allowance schedule to see your spending guidance.
+        </p>
+        <div class="progress">
+         <span id="allowanceProgress">
+         </span>
+        </div>
+        <small id="allowanceProgressText">
+        </small>
+       </article>
+      </div>
+     </section>
+     <section class="page" id="page-calendar">
+      <div class="page-heading">
+       <div>
+        <div class="eyebrow">
+         DATES THAT MATTER
+        </div>
+        <h1>
+         Financial calendar
+        </h1>
+        <p>
+         Plan your allowance, budgets, savings, and daily money tasks.
+        </p>
+       </div>
+       <div class="calendar-controls">
+        <button class="outline-btn" id="prevMonth">
+         &larr;
+        </button>
+        <b id="calendarMonth">
+        </b>
+        <button class="outline-btn" id="nextMonth">
+         &rarr;
+        </button>
+       </div>
+      </div>
+      <article class="panel calendar-hub">
+       <div class="calendar-shortcuts">
+        <button class="calendar-shortcut" data-calendar-action="allowance">
+         <span>
+          ₱
+         </span>
+         <b>
+          Add allowance
+         </b>
+         <small>
+          Record money received
+         </small>
+        </button>
+        <button class="calendar-shortcut" data-calendar-action="expense">
+         <span>
+          &minus;
+         </span>
+         <b>
+          Add expense
+         </b>
+         <small>
+          Record a purchase or payment
+         </small>
+        </button>
+        <button class="calendar-shortcut" data-calendar-action="savings">
+         <span>
+          ◎
+         </span>
+         <b>
+          Add savings
+         </b>
+         <small>
+          Record a savings deposit
+         </small>
+        </button>
+       </div>
+       <div class="calendar-grid" id="calendarGrid">
+       </div>
+       <div class="calendar-details" id="calendarDetails">
+        Select a date to view activity and add notes.
+       </div>
+      </article>
+     </section>
+     <section class="page" id="page-reports">
+      <div class="page-heading">
+       <div>
+        <div class="eyebrow">
+         INSIGHTS &amp; TRENDS
+        </div>
+        <h1>
+         Reports &amp; insights
+        </h1>
+        <p>
+         A clearer picture of your financial habits.
+        </p>
+       </div>
+       <button class="outline-btn" id="exportCsv">
+        &darr; Export CSV
+       </button>
+      </div>
+      <div class="metric-grid compact">
+       <article class="metric-card">
+        <div class="metric-head">
+         Income
+        </div>
+        <strong id="reportIncome">
+         ₱0.00
+        </strong>
+       </article>
+       <article class="metric-card">
+        <div class="metric-head">
+         Expenses
+        </div>
+        <strong id="reportExpense">
+         ₱0.00
+        </strong>
+       </article>
+       <article class="metric-card">
+        <div class="metric-head">
+         Net cash flow
+        </div>
+        <strong id="reportNet">
+         ₱0.00
+        </strong>
+       </article>
+      </div>
+      <div class="report-grid">
+       <article class="panel">
+        <h2>
+         Monthly cash flow
+        </h2>
+        <div class="chart-wrap tall">
+         <canvas id="cashflowChart">
+         </canvas>
+        </div>
+       </article>
+       <article class="panel">
+        <h2>
+         Spending by category
+        </h2>
+        <div class="budget-rows" id="reportCategories">
+        </div>
+       </article>
+      </div>
+     </section>
+     <section class="page" id="page-learn">
+      <div class="page-heading">
+       <div>
+        <div class="eyebrow">
+         BUDGTREE LEARN
+        </div>
+        <h1>
+         Learn to make your money work smarter.
+        </h1>
+        <p>
+         Explore practical financial literacy videos, podcasts, and downloadable learning resources.
+        </p>
+       </div>
+      </div>
+      <div class="learn-hero">
+       <div>
+        <span class="learn-kicker">
+         FINANCIAL LITERACY STARTS HERE
+        </span>
+        <h2>
+         Small lessons. Stronger money habits.
+        </h2>
+        <p>
+         Learn about budgeting, saving, needs versus wants, and responsible spending at your own pace.
+        </p>
+       </div>
+       <div class="learn-hero-art">
+        ✦
+        <span>
+         ₱
+        </span>
+        ◎
+       </div>
+      </div>
+      <div class="learn-tabs">
+       <button class="learn-tab active" data-learn-tab="all">
+        All resources
+       </button>
+       <button class="learn-tab" data-learn-tab="video">
+        Video lessons
+       </button>
+       <button class="learn-tab" data-learn-tab="podcast">
+        Podcasts
+       </button>
+       <button class="learn-tab" data-learn-tab="download">
+        Downloads
+       </button>
+      </div>
+      <div class="learn-section-head">
+       <div>
+        <h2>
+         Featured learning
+        </h2>
+        <p>
+         Curated resources for student money management.
+        </p>
+       </div>
+      </div>
+      <div class="learn-resource-grid" id="learnResourceGrid">
+       <article class="learn-resource" data-resource-type="video">
+        <div class="resource-art resource-video">
+         <span>
+          ▶
+         </span>
+         <small>
+          VIDEO LESSON
+         </small>
+        </div>
+        <div class="resource-body">
+         <span class="resource-label">
+          BUDGETING BASICS
+         </span>
+         <h3>
+          Build a simple student budget
+         </h3>
+         <p>
+          Learn how to list your money coming in, plan expenses, and set aside savings.
+         </p>
+         <div class="resource-meta">
+          <span>
+           Video &middot; 5&ndash;8 min
+          </span>
+          <span class="resource-status">
+           Add video file
+          </span>
+         </div>
+         <div class="resource-status">
+          Video lesson coming soon
+         </div>
+        </div>
+       </article>
+       <article class="learn-resource" data-resource-type="podcast">
+        <div class="resource-art resource-podcast">
+         <span>
+          ♫
+         </span>
+         <small>
+          PODCAST
+         </small>
+        </div>
+        <div class="resource-body">
+         <span class="resource-label">
+          STUDENT MONEY TALK
+         </span>
+         <h3>
+          Needs, wants, and wise choices
+         </h3>
+         <p>
+          An audio conversation about making thoughtful spending decisions.
+         </p>
+         <div class="resource-meta">
+          <span>
+           Audio &middot; 8&ndash;12 min
+          </span>
+          <span class="resource-status">
+           Add audio file
+          </span>
+         </div>
+         <div class="resource-status">
+          Podcast coming soon
+         </div>
+        </div>
+       </article>
+       <article class="learn-resource" data-resource-type="podcast">
+        <div class="resource-art resource-podcast podcast-alt">
+         <span>
+          ◖
+         </span>
+         <small>
+          PODCAST
+         </small>
+        </div>
+        <div class="resource-body">
+         <span class="resource-label">
+          SAVING HABITS
+         </span>
+         <h3>
+          Saving even with a small allowance
+         </h3>
+         <p>
+          Practical ideas for setting realistic savings goals as a student.
+         </p>
+         <div class="resource-meta">
+          <span>
+           Audio &middot; 6&ndash;10 min
+          </span>
+          <span class="resource-status">
+           Add audio file
+          </span>
+         </div>
+         <div class="resource-status">
+          Podcast coming soon
+         </div>
+        </div>
+       </article>
+       <article class="learn-resource" data-resource-type="download">
+        <div class="resource-art resource-download">
+         <span>
+          &darr;
+         </span>
+         <small>
+          DOWNLOADABLE GUIDE
+         </small>
+        </div>
+        <div class="resource-body">
+         <span class="resource-label">
+          FREE STUDENT RESOURCE
+         </span>
+         <h3>
+          Student budgeting starter guide
+         </h3>
+         <p>
+          A practical worksheet to help organize allowance, spending, and savings goals.
+         </p>
+         <div class="resource-meta">
+          <span>
+           Text guide &middot; Free
+          </span>
+          <span class="resource-status ready">
+           Available
+          </span>
+         </div>
+         <button class="outline-btn download-guide" type="button">
+          Download guide &darr;
+         </button>
+        </div>
+       </article>
+      </div>
+      <div class="learn-note">
+       <b>
+        Content and copyright
+       </b>
+       <p>
+        Budgtree will publish original lessons or use resources whose licenses permit the intended use. Third-party content must retain its creator attribution and source link. Downloading is enabled only where permission allows.
+       </p>
+      </div>
+     </section>
+     <section class="page" id="page-garden">
+      <div class="page-heading garden-page-heading">
+       <div>
+        <div class="eyebrow">
+         PLANT &middot; WATER &middot; GROW
+        </div>
+        <h1>
+         Eco-Garden
+        </h1>
+        <p>
+         Start with a seed and watch each plant grow through its stages over time.
+        </p>
+       </div>
+       <div class="garden-heading-balance">
+        <span>
+         ✦
+        </span>
+        <b id="gardenHeadingSeeds">
+         0
+        </b>
+        <small>
+         EcoSeeds
+        </small>
+       </div>
+      </div>
+      <div class="garden-stats-grid garden-stats-plants">
+       <article class="garden-stat">
+        <span>
+         🌱
+        </span>
+        <div>
+         <small>
+          Garden level
+         </small>
+         <b id="gardenLevelStat">
+          Level 1
+         </b>
+        </div>
+       </article>
+       <article class="garden-stat">
+        <span>
+         ✦
+        </span>
+        <div>
+         <small>
+          Available EcoSeeds
+         </small>
+         <b id="gardenBalanceStat">
+          0
+         </b>
+        </div>
+       </article>
+       <article class="garden-stat">
+        <span>
+         🌿
+        </span>
+        <div>
+         <small>
+          Plants growing
+         </small>
+         <b id="gardenPlantCount">
+          0
+         </b>
+        </div>
+       </article>
+      </div>
+      <article class="living-garden-frame garden-main-frame">
+       <div class="retro-garden-top garden-topbar">
+        <div>
+         <span class="retro-star">
+          ✿
+         </span>
+         <b>
+          Your little garden
+         </b>
+         <small>
+          Every plant begins as a seed
+         </small>
+        </div>
+        <div class="retro-level">
+         GARDEN
+         <strong id="gardenLevelBadge">
+          1
+         </strong>
+        </div>
+       </div>
+       <div aria-label="Interactive virtual garden" class="living-garden-scene garden-scene" id="gardenScene">
+        <div aria-hidden="true" class="garden-landscape-overlay">
+        </div>
+        <div aria-label="Garden planting slots" class="garden-plots" id="gardenSlots">
+        </div>
+        <div class="garden-scene-caption">
+         <span>
+          ✦
+         </span>
+         Your garden keeps growing while you are away.
+        </div>
+       </div>
+       <div class="garden-progress-footer">
+        <div class="garden-level-copy">
+         <b id="gardenProgressTitle">
+          Level 1 &middot; Starter garden
+         </b>
+         <div class="garden-progress-track">
+          <span id="gardenProgressFill">
+          </span>
+         </div>
+         <small id="gardenProgressText">
+          0 / 30 lifetime EcoSeeds to next level
+         </small>
+        </div>
+        <div class="garden-progress-note">
+         Garden levels are based on lifetime EcoSeeds earned. Spending seeds never removes your garden progress.
+        </div>
+       </div>
+      </article>
+      <div class="garden-content-grid garden-plants-content">
+       <article class="panel garden-inventory-panel">
+        <div class="panel-head">
+         <div>
+          <h2>
+           My seeds
+          </h2>
+          <p>
+           Select a seed packet, then choose an empty plot to plant it.
+          </p>
+         </div>
+         <span class="garden-pill" id="gardenInventoryCount">
+          0 seed packets
+         </span>
+        </div>
+        <div class="garden-inventory-tabs">
+         <button class="active" data-garden-tab="inventory" type="button">
+          My seeds
+         </button>
+         <button data-garden-tab="shop" type="button">
+          Seed shop
+         </button>
+        </div>
+        <div class="garden-inventory-list" id="gardenInventory">
+        </div>
+        <div class="garden-shop-grid hidden" id="gardenShop">
+        </div>
+        <p class="garden-inventory-hint" id="gardenInventoryHint">
+         Choose a seed packet, then select an empty garden plot.
+        </p>
+       </article>
+       <article class="panel garden-growth-panel">
+        <div class="panel-head">
+         <div>
+          <h2>
+           Growth stages
+          </h2>
+          <p>
+           Plants progress naturally as time passes. Watering helps them grow.
+          </p>
+         </div>
+        </div>
+        <div class="garden-growth-steps">
+         <div>
+          <span>
+           🌰
+          </span>
+          <b>
+           Seed
+          </b>
+          <small>
+           Just planted
+          </small>
+         </div>
+         <div>
+          <span>
+           🌱
+          </span>
+          <b>
+           Sprout
+          </b>
+          <small>
+           First growth
+          </small>
+         </div>
+         <div>
+          <span>
+           🌿
+          </span>
+          <b>
+           Seedling
+          </b>
+          <small>
+           New leaves
+          </small>
+         </div>
+         <div>
+          <span>
+           🪴
+          </span>
+          <b>
+           Growing
+          </b>
+          <small>
+           Getting bigger
+          </small>
+         </div>
+         <div>
+          <span>
+           🌼
+          </span>
+          <b>
+           Mature
+          </b>
+          <small>
+           Fully grown
+          </small>
+         </div>
+        </div>
+        <p class="garden-inventory-hint">
+         Plant artwork is based on the Budgtree Eco-Garden plant collection.
+        </p>
+       </article>
+      </div>
+     </section>
+     <section class="page" id="page-rewards">
+      <div class="page-heading">
+       <div>
+        <div class="eyebrow">
+         SMALL HABITS, REAL PROGRESS
+        </div>
+        <h1>
+         Rewards &amp; Achievements
+        </h1>
+        <p>
+         Earn virtual EcoSeeds by building consistent financial habits.
+        </p>
+       </div>
+       <div class="garden-heading-balance">
+        <span>
+         ✦
+        </span>
+        <b id="rewardsBalance">
+         0
+        </b>
+        <small>
+         EcoSeeds
+        </small>
+       </div>
+      </div>
+      <div class="rewards-summary-grid">
+       <article class="panel reward-summary">
+        <span>
+         ✦
+        </span>
+        <small>
+         Available EcoSeeds
+        </small>
+        <b id="rewardAvailable">
+         0
+        </b>
+       </article>
+       <article class="panel reward-summary">
+        <span>
+         🌱
+        </span>
+        <small>
+         Lifetime earned
+        </small>
+        <b id="rewardLifetime">
+         0
+        </b>
+       </article>
+       <article class="panel reward-summary">
+        <span>
+         🏆
+        </span>
+        <small>
+         Achievements unlocked
+        </small>
+        <b id="rewardUnlocked">
+         0 / 7
+        </b>
+       </article>
+      </div>
+      <article class="panel">
+       <div class="panel-head">
+        <div>
+         <h2>
+          How to earn EcoSeeds
+         </h2>
+         <p>
+          Rewards are virtual and can only be used inside the Eco-Garden.
+         </p>
+        </div>
+       </div>
+       <div class="seed-earning-list">
+        <div>
+         <span>
+          📅
+         </span>
+         <b>
+          Daily website visit
+         </b>
+         <small>
+          Once per day
+         </small>
+         <strong>
+          +2 ✦
+         </strong>
+        </div>
+        <div>
+         <span>
+          🧾
+         </span>
+         <b>
+          Add a transaction
+         </b>
+         <small>
+          New saved transaction
+         </small>
+         <strong>
+          +1 ✦
+         </strong>
+        </div>
+        <div>
+         <span>
+          🎯
+         </span>
+         <b>
+          Create a savings goal
+         </b>
+         <small>
+          Once per day
+         </small>
+         <strong>
+          +3 ✦
+         </strong>
+        </div>
+        <div>
+         <span>
+          📊
+         </span>
+         <b>
+          Complete a budget plan
+         </b>
+         <small>
+          One-time reward
+         </small>
+         <strong>
+          +5 ✦
+         </strong>
+        </div>
+        <div>
+         <span>
+          🏁
+         </span>
+         <b>
+          Reach a savings milestone
+         </b>
+         <small>
+          First 25% of a savings goal
+         </small>
+         <strong>
+          +5 ✦
+         </strong>
+        </div>
+       </div>
+      </article>
+      <article class="panel">
+       <div class="panel-head">
+        <div>
+         <h2>
+          Achievements
+         </h2>
+         <p>
+          Milestones that celebrate your progress.
+         </p>
+        </div>
+       </div>
+       <div class="achievement-grid" id="achievementGrid">
+       </div>
+      </article>
+      <article class="panel">
+       <div class="panel-head">
+        <div>
+         <h2>
+          EcoSeeds activity
+         </h2>
+         <p>
+          Your recent virtual rewards and garden purchases.
+         </p>
+        </div>
+       </div>
+       <div class="seed-history" id="seedHistory">
+       </div>
+      </article>
+     </section>
+     <section class="page" id="page-profile">
+      <div class="page-heading">
+       <div>
+        <div class="eyebrow">
+         YOUR STUDENT IDENTITY
+        </div>
+        <h1>
+         My Profile
+        </h1>
+        <p>
+         Your Budgtree student card and personal details.
+        </p>
+       </div>
+       <button class="primary-btn" id="toggleProfileEditor">
+        <span>
+         ✎
+        </span>
+        Customize profile
+       </button>
+      </div>
+      <article class="id-card-shell">
+       <div class="student-id-card" id="studentIdCard">
+        <div class="id-card-top">
+         <div class="id-brand">
+          <span class="id-brand-mark">
+           ✦
+          </span>
+          <div>
+           <b>
+            Budgtree
+           </b>
+           <small>
+            STUDENT COMMUNITY
+           </small>
+          </div>
+         </div>
+         <span class="id-label">
+          STUDENT IDENTIFICATION
+         </span>
+        </div>
+        <div class="id-card-main">
+         <div class="id-photo" id="idPhoto">
+          <span id="idPhotoInitial">
+           S
+          </span>
+         </div>
+         <div class="id-identity">
+          <div class="id-kicker">
+           THIS CARD BELONGS TO
+          </div>
+          <h2 id="idName">
+           YOUR NAME
+          </h2>
+          <div class="id-level" id="idLevel">
+           SENIOR HIGH SCHOOL &middot; GRADE 11
+          </div>
+          <div class="id-detail">
+           <span>
+            STRAND
+           </span>
+           <b id="idStrand">
+            Not set
+           </b>
+          </div>
+          <div class="id-detail">
+           <span>
+            SECTION
+           </span>
+           <b id="idSection">
+            Not set
+           </b>
+          </div>
+         </div>
+        </div>
+        <div class="id-card-bottom">
+         <div class="id-meta">
+          <div>
+           <small>
+            STUDENT NUMBER
+           </small>
+           <b id="idStudentNumber">
+            000000
+           </b>
+          </div>
+          <div>
+           <small>
+            SCHOOL
+           </small>
+           <b id="idSchool">
+            Your School
+           </b>
+          </div>
+         </div>
+         <div class="id-qr">
+          <span>
+           ▦
+          </span>
+          <small>
+           ECF MEMBER
+          </small>
+         </div>
+        </div>
+        <div class="id-card-ribbon">
+         PLAN THOUGHTFULLY &middot; SAVE CONSISTENTLY &middot; GROW CONFIDENTLY
+        </div>
+       </div>
+      </article>
+      <div class="profile-customize-panel hidden" id="profileEditor">
+       <div class="profile-editor-head">
+        <div>
+         <div class="eyebrow">
+          MAKE IT YOURS
+         </div>
+         <h2>
+          Customize your student ID
+         </h2>
+         <p>
+          Update your details, photo, and card appearance. Preview changes before saving.
+         </p>
+        </div>
+        <span class="editor-icon">
+         ✎
+        </span>
+       </div>
+       <div class="profile-theme-picker">
+        <b>
+         Choose an ID design
+        </b>
+        <div class="theme-options">
+         <button class="theme-option active" data-id-theme="classic" type="button">
+          <i class="theme-swatch theme-classic">
+          </i>
+          <span>
+           Classic
+          </span>
+         </button>
+         <button class="theme-option" data-id-theme="royal" type="button">
+          <i class="theme-swatch theme-royal">
+          </i>
+          <span>
+           Royal Gold
+          </span>
+         </button>
+         <button class="theme-option" data-id-theme="botanical" type="button">
+          <i class="theme-swatch theme-botanical">
+          </i>
+          <span>
+           Botanical
+          </span>
+         </button>
+         <button class="theme-option" data-id-theme="minimal" type="button">
+          <i class="theme-swatch theme-minimal">
+          </i>
+          <span>
+           Minimal
+          </span>
+         </button>
+         <button class="theme-option" data-id-theme="autumn" type="button">
+          <i class="theme-swatch theme-autumn">
+          </i>
+          <span>
+           Autumn
+          </span>
+         </button>
+        </div>
+       </div>
+       <div class="profile-edit-grid">
+        <div class="profile-upload-card">
+         <div class="id-upload-preview" id="editorPhotoPreview">
+          S
+         </div>
+         <label class="outline-btn file-button">
+          Upload profile photo
+          <input accept="image/png,image/jpeg,image/webp" hidden="" id="profilePhotoInput" type="file"/>
+         </label>
+         <small>
+          PNG, JPG or WEBP &middot; up to 1.2 MB
+         </small>
+        </div>
+        <div class="profile-fields-grid">
+         <label class="field">
+          Full name
+          <input id="profileNameInput" maxlength="60" placeholder="Your full name"/>
+         </label>
+         <label class="field">
+          Student ID
+          <input id="profileStudentId" maxlength="30" placeholder="Student number"/>
+         </label>
+         <label class="field">
+          School
+          <input id="profileSchool" maxlength="100" placeholder="Your school"/>
+         </label>
+         <label class="field">
+          Education level
+          <input disabled="" value="Senior High School"/>
+         </label>
+         <label class="field">
+          Grade level
+          <select id="profileYear">
+           <option value="">
+            Select grade
+           </option>
+           <option>
+            Grade 11
+           </option>
+           <option>
+            Grade 12
+           </option>
+          </select>
+         </label>
+         <label class="field">
+          Strand
+          <input id="profileStrand" maxlength="80" placeholder="Type your strand"/>
+         </label>
+         <label class="field">
+          Section
+          <input id="profileSection" maxlength="40" placeholder="Type your section"/>
+         </label>
+         <label class="field">
+          Account email
+          <input disabled="" id="profileEmailInput"/>
+         </label>
+        </div>
+       </div>
+       <div class="profile-editor-actions">
+        <span class="profile-save-note">
+         Your student card preview updates when you save.
+        </span>
+        <button class="primary-btn" id="saveProfile">
+         Save profile changes
+        </button>
+       </div>
+      </div>
+      <div class="profile-extra-grid">
+       <article class="panel">
+        <div class="panel-head">
+         <div>
+          <h2>
+           Student account
+          </h2>
+          <p>
+           Your Budgtree account details.
+          </p>
+         </div>
+        </div>
+        <div class="profile-account-row">
+         <span class="account-icon">
+          ✉
+         </span>
+         <div>
+          <b id="profileEmail">
+           student@example.com
+          </b>
+          <small>
+           Account email
+          </small>
+         </div>
+        </div>
+       </article>
+      </div>
+     </section>
+     <section class="page" id="page-settings">
+      <div class="page-heading">
+       <div>
+        <div class="eyebrow">
+         PREFERENCES &amp; DATA
+        </div>
+        <h1>
+         Settings
+        </h1>
+        <p>
+         Manage your Budgtree experience and local data.
+        </p>
+       </div>
+      </div>
+      <div class="settings-grid">
+       <article class="panel settings-panel">
+        <h2>
+         Preferences
+        </h2>
+        <p>
+         Personalize your dashboard.
+        </p>
+        <label class="field">
+         Currency
+         <select id="currencySetting">
+          <option value="PHP">
+           Philippine Peso (PHP ₱)
+          </option>
+         </select>
+        </label>
+        <label class="check-row">
+         <input checked="" id="notifyBudget" type="checkbox"/>
+         Show budget warnings
+        </label>
+        <label class="check-row">
+         <input id="darkMode" type="checkbox"/>
+         Dark appearance
+        </label>
+        <button class="primary-btn" id="savePreferences">
+         Save preferences
+        </button>
+       </article>
+       <article class="panel settings-panel">
+        <h2>
+         Account &amp; Google connection
+        </h2>
+        <p id="providerStatus">
+         Email account
+        </p>
+        <button class="google-btn" id="connectGoogle">
+         <b class="google-g">
+          G
+         </b>
+         Connect Google account
+        </button>
+        <hr/>
+        <h2>
+         Change password
+        </h2>
+        <label class="field">
+         Current password
+         <input autocomplete="current-password" id="currentPassword" type="password"/>
+        </label>
+        <label class="field">
+         New password
+         <input autocomplete="new-password" id="newPassword" type="password"/>
+        </label>
+        <div class="password-rules compact-rules" id="settingsPasswordRules">
+         <span data-rule="length">
+          &cir; At least 8 characters
+         </span>
+         <span data-rule="letter">
+          &cir; At least one letter
+         </span>
+         <span data-rule="number">
+          &cir; At least one number
+         </span>
+        </div>
+        <button class="outline-btn" id="changePassword">
+         Change password
+        </button>
+        <hr/>
+        <h2>
+         Data management
+        </h2>
+        <p>
+         Download a backup or restore your records.
+        </p>
+        <div class="settings-actions">
+         <button class="outline-btn" id="backupData">
+          &darr; Download backup
+         </button>
+         <label class="outline-btn file-button">
+          &uarr; Restore backup
+          <input accept="application/json" hidden="" id="restoreFile" type="file"/>
+         </label>
+        </div>
+        <hr/>
+        <h2>
+         Danger zone
+        </h2>
+        <button class="danger-btn" id="resetRecords">
+         Reset financial records
+        </button>
+        <button class="danger-btn" id="deleteAccount">
+         Delete account
+        </button>
+       </article>
+      </div>
+     </section>
+     <footer class="footer">
+      Budgtree
+      <span>
+       &bull;
+      </span>
+      Plan thoughtfully. Save consistently. Grow confidently.
+     </footer>
+    </div>
+   </main>
+  </div>
+  <dialog class="modal" id="transactionDialog">
+   <form id="transactionForm">
+    <div class="modal-head">
+     <div>
+      <div class="eyebrow">
+       FINANCIAL RECORD
+      </div>
+      <h2 id="txModalTitle">
+       Add transaction
+      </h2>
+     </div>
+     <button class="close-btn" data-close="transactionDialog" type="button">
+      &times;
+     </button>
+    </div>
+    <input id="txId" type="hidden"/>
+    <label class="field">
+     Description
+     <input id="txDescription" maxlength="60" placeholder="e.g. Weekly allowance" required=""/>
+    </label>
+    <div class="form-two">
+     <label class="field">
+      Type
+      <select id="txType">
+       <option value="expense">
+        Expense
+       </option>
+       <option value="income">
+        Income
+       </option>
+      </select>
+     </label>
+     <label class="field">
+      Category
+      <select id="txCategory">
+       <option>
+        Food
+       </option>
+       <option>
+        Transportation
+       </option>
+       <option>
+        School Expenses
+       </option>
+       <option>
+        Personal Needs
+       </option>
+       <option>
+        Shopping
+       </option>
+       <option>
+        Entertainment
+       </option>
+       <option>
+        Allowance
+       </option>
+       <option>
+        Other
+       </option>
+      </select>
+     </label>
+    </div>
+    <div class="form-two">
+     <label class="field">
+      Amount (₱)
+      <input id="txAmount" inputmode="decimal" min=".01" required="" step=".01" type="text"/>
+     </label>
+     <label class="field">
+      Date
+      <input id="txDate" required="" type="date"/>
+     </label>
+    </div>
+    <label class="field">
+     Payment method
+     <select id="txMethod">
+      <option>
+       Cash
+      </option>
+      <option>
+       Bank
+      </option>
+      <option>
+       GCash
+      </option>
+      <option>
+       Maya
+      </option>
+      <option>
+       Other
+      </option>
+     </select>
+    </label>
+    <div class="form-error" id="txError">
+    </div>
+    <div class="modal-actions">
+     <button class="outline-btn" data-close="transactionDialog" type="button">
+      Cancel
+     </button>
+     <button class="primary-btn">
+      Save transaction
+     </button>
+    </div>
+   </form>
+  </dialog>
+  <dialog class="modal" id="budgetDialog">
+   <form id="budgetForm">
+    <div class="modal-head">
+     <div>
+      <div class="eyebrow">
+       MONTHLY PLAN
+      </div>
+      <h2>
+       Set category budgets
+      </h2>
+     </div>
+     <button class="close-btn" data-close="budgetDialog" type="button">
+      &times;
+     </button>
+    </div>
+    <div class="budget-inputs" id="budgetInputs">
+    </div>
+    <div class="modal-actions">
+     <button class="outline-btn" data-close="budgetDialog" type="button">
+      Cancel
+     </button>
+     <button class="primary-btn">
+      Save budget
+     </button>
+    </div>
+   </form>
+  </dialog>
+  <dialog class="modal" id="otherPurchaseDialog">
+   <form id="otherPurchaseForm">
+    <div class="modal-head">
+     <div>
+      <div class="eyebrow">
+       SMALL PURCHASES
+      </div>
+      <h2>
+       Add an Other purchase
+      </h2>
+     </div>
+     <button class="close-btn" data-close="otherPurchaseDialog" type="button">
+      &times;
+     </button>
+    </div>
+    <label class="field">
+     What did you buy?
+     <input id="otherPurchaseName" maxlength="70" placeholder="e.g. Coffee, ballpen, snacks" required=""/>
+    </label>
+    <div class="form-two">
+     <label class="field">
+      Amount (₱)
+      <input id="otherPurchaseAmount" inputmode="decimal" placeholder="0.00" required=""/>
+     </label>
+     <label class="field">
+      Date
+      <input id="otherPurchaseDate" required="" type="date"/>
+     </label>
+    </div>
+    <label class="field">
+     Notes
+     <span class="optional">
+      Optional
+     </span>
+     <input id="otherPurchaseNotes" maxlength="120" placeholder="Any extra details"/>
+    </label>
+    <div class="modal-actions">
+     <button class="outline-btn" data-close="otherPurchaseDialog" type="button">
+      Cancel
+     </button>
+     <button class="primary-btn">
+      Save purchase
+     </button>
+    </div>
+   </form>
+  </dialog>
+  <dialog class="modal" id="calendarEntryDialog">
+   <form id="calendarEntryForm">
+    <div class="modal-head">
+     <div>
+      <div class="eyebrow">
+       FINANCIAL CALENDAR
+      </div>
+      <h2 id="calendarEntryTitle">
+       Add calendar entry
+      </h2>
+     </div>
+     <button class="close-btn" data-close="calendarEntryDialog" type="button">
+      &times;
+     </button>
+    </div>
+    <input id="calendarEntryType" type="hidden"/>
+    <label class="field">
+     Description
+     <input id="calendarEntryDescription" maxlength="70" placeholder="What is this for?" required=""/>
+    </label>
+    <div class="form-two">
+     <label class="field">
+      Amount (₱)
+      <input id="calendarEntryAmount" inputmode="decimal" placeholder="0.00" required=""/>
+     </label>
+     <label class="field">
+      Date
+      <input id="calendarEntryDate" required="" type="date"/>
+     </label>
+    </div>
+    <label class="field" id="calendarEntryCategoryWrap">
+     Category
+     <select id="calendarEntryCategory">
+      <option>
+       Food
+      </option>
+      <option>
+       Transportation
+      </option>
+      <option>
+       School Expenses
+      </option>
+      <option>
+       Personal Needs
+      </option>
+      <option>
+       Shopping
+      </option>
+      <option>
+       Entertainment
+      </option>
+      <option>
+       Other
+      </option>
+     </select>
+    </label>
+    <label class="field" id="calendarEntrySourceWrap">
+     Source
+     <select id="calendarEntrySource">
+      <option>
+       Parents
+      </option>
+      <option>
+       Scholarship
+      </option>
+      <option>
+       Part-time
+      </option>
+      <option>
+       Other
+      </option>
+     </select>
+    </label>
+    <label class="field" id="calendarEntryGoalWrap">
+     Savings goal
+     <span class="optional">
+      Optional
+     </span>
+     <select id="calendarEntryGoal">
+      <option value="">
+       General savings
+      </option>
+     </select>
+    </label>
+    <label class="field">
+     Notes
+     <span class="optional">
+      Optional
+     </span>
+     <input id="calendarEntryNotes" maxlength="140"/>
+    </label>
+    <div class="modal-actions">
+     <button class="outline-btn" data-close="calendarEntryDialog" type="button">
+      Cancel
+     </button>
+     <button class="primary-btn">
+      Save entry
+     </button>
+    </div>
+   </form>
+  </dialog>
+  <dialog class="modal" id="goalDialog">
+   <form id="goalForm">
+    <div class="modal-head">
+     <div>
+      <div class="eyebrow">
+       YOUR NEXT MILESTONE
+      </div>
+      <h2>
+       Create savings goal
+      </h2>
+     </div>
+     <button class="close-btn" data-close="goalDialog" type="button">
+      &times;
+     </button>
+    </div>
+    <label class="field">
+     Goal name
+     <input id="goalName" maxlength="45" required=""/>
+    </label>
+    <div class="form-two">
+     <label class="field">
+      Target amount (₱)
+      <input id="goalTarget" inputmode="decimal" min="1" required="" step=".01" type="text"/>
+     </label>
+     <label class="field">
+      Initial savings (₱)
+      <input id="goalInitial" inputmode="decimal" min="0" step=".01" type="text" value="0"/>
+     </label>
+    </div>
+    <label class="field">
+     Target date
+     <input id="goalDeadline" type="date"/>
+    </label>
+    <div class="form-error" id="goalError">
+    </div>
+    <div class="modal-actions">
+     <button class="outline-btn" data-close="goalDialog" type="button">
+      Cancel
+     </button>
+     <button class="primary-btn">
+      Create goal
+     </button>
+    </div>
+   </form>
+  </dialog>
+  <dialog class="modal" id="depositDialog">
+   <form id="depositForm">
+    <div class="modal-head">
+     <div>
+      <div class="eyebrow">
+       SAVINGS CONTRIBUTION
+      </div>
+      <h2>
+       Add to your goal
+      </h2>
+     </div>
+     <button class="close-btn" data-close="depositDialog" type="button">
+      &times;
+     </button>
+    </div>
+    <input id="depositGoalId" type="hidden"/>
+    <label class="field">
+     Amount (₱)
+     <input id="depositAmount" inputmode="decimal" min=".01" required="" step=".01" type="text"/>
+    </label>
+    <div class="modal-actions">
+     <button class="outline-btn" data-close="depositDialog" type="button">
+      Cancel
+     </button>
+     <button class="primary-btn">
+      Add savings
+     </button>
+    </div>
+   </form>
+  </dialog>
+  <dialog class="modal recovery-modal" id="passwordRecoveryDialog">
+   <div class="modal-head">
+    <div>
+     <div class="eyebrow">
+      ACCOUNT RECOVERY
+     </div>
+     <h2>
+      Forgot your password?
+     </h2>
+    </div>
+    <button aria-label="Close" class="close-btn" data-close="passwordRecoveryDialog" type="button">
+     &times;
+    </button>
+   </div>
+   <p>
+    For cloud accounts, change your password by entering your account identifier and current password. If you have forgotten your current password, contact your Budgtree administrator for account recovery. Email-based recovery is disabled.
+   </p>
+   <label class="field">
+    Registered email or username
+    <input autocomplete="username" id="recoveryIdentifier" placeholder="Enter your account email or username" required="" type="text"/>
+   </label>
+   <div class="recovery-current-fields">
+    <label class="field">
+     Current password / student number verification
+     <input autocomplete="current-password" id="recoveryOldPassword" placeholder="Enter your current password" type="password"/>
+    </label>
+    <label class="field">
+     New password
+     <input autocomplete="new-password" id="recoveryNewPassword" minlength="8" placeholder="At least 8 characters" type="password"/>
+    </label>
+    <label class="field">
+     Confirm new password
+     <input autocomplete="new-password" id="recoveryConfirmPassword" minlength="8" placeholder="Repeat your new password" type="password"/>
+    </label>
+   </div>
+   <div class="form-error" id="recoveryPasswordError" role="alert">
+   </div>
+   <div class="recovery-actions">
+    <button class="primary-btn full" id="changePasswordFromRecovery" type="button">
+     Verify and reset password
+    </button>
+    <button class="outline-btn full hidden" id="sendPasswordResetEmail" type="button">
+     Send password-reset email
+    </button>
+   </div>
+   <small class="auth-note">
+    Cloud accounts sync through Supabase. Email sending is not used for routine registration or login. Forgotten-password recovery requires administrator assistance.
+   </small>
+  </dialog>
+  <div class="toast" id="toast" role="status">
+   <div hidden="" id="legacyProfileCompat">
+    <span id="profileAvatar">
+     S
+    </span>
+    <span id="profileHeading">
+     Student
+    </span>
+    <span id="profileCourse">
+    </span>
+    <select id="profileFrame">
+     <option value="none">
+      None
+     </option>
+    </select>
+   </div>
+  </div>
+  <script src="./config.js">
+  </script>
+  <script src="./app.js">
+  </script>
+  <script src="./enhancements.js">
+  </script>
+  <script src="./garden.js">
+  </script>
+ </body>
+</html>
